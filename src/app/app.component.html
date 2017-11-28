@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a  *ngIf="router.url === '/login'" class="navbar-brand" [routerLink] = "['/login']"><h1>{{title}}</h1></a>
+  <a  *ngIf="router.url != '/login'" class="navbar-brand" [routerLink] = "['/home']"><h1>{{title}}</h1></a>
+  <div *ngIf="router.url != '/login'" class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active breatheVertical breatheLeft" *ngFor="let listItems of filterByList">
+        <a class="nav-link"  (click) = "redirect()" [routerLink] = "['/filter', listItems]" ><h3>{{listItems}}</h3></a>
+      </li>
+    </ul>
+
+      <button [routerLink] = "['/addBlog']" class="btn btn-outline-success my-2 my-sm-0 " type="submit">Submit A blog</button>
+    <button [routerLink] = "['/login']" (click)="logout()" class="btn btn-outline-danger btnbreatheLeft my-2 my-sm-0" type="submit">Sign out</button>
+  </div>
+</nav>
+
+
+<div class="container breatheVertical">
+
+  <router-outlet></router-outlet>
+</div>

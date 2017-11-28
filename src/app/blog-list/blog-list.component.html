@@ -1,0 +1,18 @@
+<div class="breatheVertical" >
+
+  <input [(ngModel)] = 'listFilter' class="inutBox" type="text" placeholder="Search">
+</div>
+<br>
+<div class="collection">
+  <div class="card" *ngFor="let blog of searchedBlogs " style="margin: 20px">
+    <div class="card-header">
+      <h3>{{blog.name}}</h3>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{blog.blogC}}</p>
+    </div>
+    <div class="card-footer text-muted">
+      PostedBy : {{blog.postedBy}}
+    </div>
+  </div>
+</div>

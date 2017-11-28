@@ -1,0 +1,21 @@
+.right{
+  float: right;
+  margin-top: 6%;
+  margin-right: 12%;
+}
+.left{
+  margin-top: 6%;
+  margin-left:11%;
+  float: left;
+}
+.borderclr{
+  padding: 4%;
+  border-radius: 6px;
+  border: 1px solid red;
+  background-color: #f2f6e8;
+}
+
+.banner{
+
+  align-content: center;
+}

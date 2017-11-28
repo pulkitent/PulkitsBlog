@@ -1,0 +1,84 @@
+{
+  "blogsData": [
+    {
+      "id": 1,
+      "name": "Tech",
+      "desc": "science",
+      "tag": "SCIENCE",
+      "blogC": "qwerk"
+    },
+    {
+      "id": 2,
+      "name": "big bang",
+      "desc": "science",
+      "tag": "SCIENCE",
+      "blogC": "vbnm"
+    },
+    {
+      "id": 3,
+      "name": "Nuclear War",
+      "desc": "science",
+      "tag": "0",
+      "blogC": "Atomic",
+      "userId": 1
+    },
+    {
+      "name": "nagarpalika",
+      "desc": "manhole surakshit karo",
+      "tag": "SPORTS",
+      "blogC": "Yes Its very sporty to shurakshit a manhole :P",
+      "userId": 2,
+      "postedBy": "papa",
+      "id": 4
+    },
+    {
+      "name": "Sot Lgau kya",
+      "desc": "great song",
+      "tag": "FOOD",
+      "blogC": "Bol na aunty aau kya..",
+      "userId": 2,
+      "postedBy": "papa",
+      "id": 5
+    },
+    {
+      "name": "Dilo ka shooter hai mera scooter",
+      "desc": "Dhinchak <3",
+      "tag": "CARS",
+      "blogC": "Scooter is also a car",
+      "userId": 3,
+      "postedBy": "mummy",
+      "id": 6
+    },
+    {
+      "name": "selfie mene leli aaj",
+      "desc": "asdfghjk",
+      "tag": "SCIENCE",
+      "blogC": "Yes its a technology.. as without camera you cannot take a selfie",
+      "userId": 4,
+      "postedBy": "beta",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Pulkit",
+      "password": "1234"
+    },
+    {
+      "username": "papa",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "username": "mummy",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "username": "beta",
+      "password": "12345",
+      "id": 4
+    }
+  ]
+}

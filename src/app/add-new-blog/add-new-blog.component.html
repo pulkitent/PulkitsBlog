@@ -1,0 +1,61 @@
+<div *ngIf="router.url === '/addBlog'">
+<div class="breatheVertical">
+    <label>Title</label>
+    <input  type="text" class="form-control" #title  placeholder="Submit Title">
+  </div>
+  <div class="breatheVertical">
+    <label>Details</label>
+    <input type="text"  class="form-control" #description placeholder="Details">
+  </div>
+ <div class="breatheVertical">
+   <label>Tags</label>
+   <select #tag class="form-control">
+     <option value="0" selected="selected"> </option>
+     <option value="TECHNOLOGY">Technology</option>
+     <option value="SCIENCE">Science</option>
+     <option value="FOOD">Food</option>
+     <option value="SPORTS">Sports</option>
+     <option value="CARS">Cars</option>
+   </select>
+ </div>
+ <div class="breatheVertical">
+   <label>Put blog here</label>
+   <br>
+   <textarea
+     type="text" class="form-control inpBox" #blogContent placeholder="Write your blog here......"></textarea>
+ </div>
+ <div class="breatheVertical">
+  <button type="submit" class="btn btn-primary" (click)="addBlog(title.value, description.value, tag.options[tag.selectedIndex].value,
+    blogContent.value); ">Submit</button>
+ </div>
+</div>
+<div *ngIf="router.url === '/edit'">
+ <div class="breatheVertical"  *ngIf="router.url === '/edit'">
+   <label>Title</label>
+   <input [(ngModel)] = 'TITLE'  type="text" class="form-control" #title1 value= {{blogedit.name}}  placeholder="Enter Title">
+ </div>
+ <div class="breatheVertical">
+   <label>Details</label>
+   <input [(ngModel)] = 'DESCRIPTION'   type="text"  class="form-control" value= {{blogedit.desc}} #description1 placeholder="Details">
+ </div>
+ <div class="breatheVertical">
+   <label>Tags</label>
+   <select #tag1 class="form-control">
+     <option value="0" selected="selected"> </option>
+     <option value="TECHNOLOGY">Technology</option>
+     <option value="SCIENCE">Science</option>
+     <option value="FOOD">Food</option>
+     <option value="SPORTS">Sports</option>
+     <option value="CARS">Cars</option>
+   </select>
+ </div>
+ <div class="breatheVertical">
+   <label>Write here</label>
+   <br>
+   <textarea
+     type="text" [(ngModel)] = 'BLOGC'   value= {{blogedit.blogC}} class="form-control inpBox" #blogContent1 placeholder="Put your blogging details here......"></textarea>
+ </div>
+ <div class="breatheVertical">
+   <button type="submit" class="btn btn-primary" (click)="editBlog(tag1.options[tag1.selectedIndex].value); ">Submit</button>
+ </div>
+</div>
